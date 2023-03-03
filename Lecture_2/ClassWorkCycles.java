@@ -1,7 +1,5 @@
 package Java_1.Lecture_2;
 
-import java.util.Arrays;
-
 public class ClassWorkCycles {
     public static void main(String[] args) {
         checkNumber();
