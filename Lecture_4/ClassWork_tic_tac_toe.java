@@ -120,10 +120,10 @@ public class ClassWork_tic_tac_toe {
                 if(map[j][i] == sing){
                     row++;
                 }
-                if(map[j][j] == 0){
+                if(map[j][j] == sing){
                     diagonal++;
                 }
-                if(map[j][SIZE - 1 - j] == 0){
+                if(map[j][SIZE - 1 - j] == sing){
                     reverseDiagonal++;
                 }
                 if(column == DOTS_TO_WIN ||
