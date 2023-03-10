@@ -25,10 +25,11 @@ public class Cat {
         }
     }
 
-    public int getAge(){
+    public int getAge(){ // Считывание данных из переменной age.
         return age;
     }
-    public int getAgeIf() {
+    public int getAgeIf() { // Метод лоя проверки считывания данных из переменной age, по условию if.
+                            // Работает, но не уверен, что так пишут код. Возможно подобную проверку пишут уже методе main.
         if (age > 1 && age < 4) {
             return age;
         }
