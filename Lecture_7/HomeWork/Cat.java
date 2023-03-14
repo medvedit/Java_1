@@ -1,5 +1,7 @@
 package Java_1.Lecture_7.HomeWork;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Cat {
     private String name;
     private int appetite;
@@ -19,7 +21,7 @@ public class Cat {
     }
     //</editor-fold>
 
-    public void eat(Plate food) {
+    public void eat(@NotNull Plate food) {
         food.decreaseFood(appetite);
     }
     public void catInfo(String inName, int inAppetite){
