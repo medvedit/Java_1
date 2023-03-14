@@ -6,7 +6,7 @@ public class Cat {
     private String name;
     private int appetite;
 
-    public Cat(String name, int appetite) {
+    public Cat(String name, int appetite) { // Конструктор.
         this.name = name;
         this.appetite = appetite;
     }
@@ -21,10 +21,10 @@ public class Cat {
     }
     //</editor-fold>
 
-    public void eat(@NotNull Plate food) {
-        food.decreaseFood(appetite);
+    public void eat(@NotNull Plate food) { // Метод кормления кота, в который передается тарелка с едой,
+        food.decreaseFood(appetite); // Метод вычисления оставшейся еды на основании аппетита кота.
     }
-    public void catInfo(String inName, int inAppetite){
+    public void catInfo(String inName, int inAppetite){ // Метод присвоения данных о коте, который в данный момент кушает.
         this.name = inName;
         this.appetite = inAppetite;
 
