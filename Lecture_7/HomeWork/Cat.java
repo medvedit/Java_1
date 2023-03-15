@@ -1,6 +1,5 @@
 package Java_1.Lecture_7.HomeWork;
 
-import org.jetbrains.annotations.NotNull;
 
 public class Cat {
     private String name;
@@ -21,7 +20,7 @@ public class Cat {
     }
     //</editor-fold>
 
-    public void eat(@NotNull Plate food) { // Метод кормления кота, в который передается тарелка с едой,
+    public void eat(Plate food) { // Метод кормления кота, в который передается тарелка с едой,
         food.decreaseFood(appetite); // Метод вычисления оставшейся еды на основании аппетита кота.
     }
     public void catInfo(String inName, int inAppetite){ // Метод присвоения данных о коте, который в данный момент кушает.
