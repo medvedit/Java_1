@@ -1,6 +1,5 @@
 package Java_1.Lecture_8.HomeWork;
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -18,11 +17,11 @@ public class HomeWork extends JFrame {
     private int counter;
 
     public HomeWork(int initialValue){
-        setBounds(1360,30,300,150);
+        setBounds(1180, 110,400, 180);
         setTitle("Simple counter");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        Font fontButton = new Font("Arial", Font.BOLD, 35);
-        Font fontCounterValue = new Font("Arial", Font.BOLD, 52);
+        Font fontCounterValue = new Font("Arial", Font.BOLD, 84);
+        Font fontButton = new Font("Arial", Font.BOLD, 42);
 
         JTextField counterValue = new JTextField();
         counterValue.setFont(fontCounterValue);
@@ -36,7 +35,6 @@ public class HomeWork extends JFrame {
         add(increment, BorderLayout.EAST);
 
         JButton decrement = new JButton("<");
-        decrement.setBackground(Color.cyan);
         decrement.setFont(fontButton);
         add(decrement, BorderLayout.WEST);
 
